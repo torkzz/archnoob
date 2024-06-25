@@ -27,17 +27,17 @@ echo "tor:password" | chpasswd
 echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
 # Install and configure bootloader (assuming using GRUB)
-pacman -S --noconfirm grub
-grub-install --target=i386-pc /dev/sda  # Replace /dev/sda with your disk
-grub-mkconfig -o /boot/grub/grub.cfg
+# pacman -S --noconfirm grub
+# grub-install --target=i386-pc /dev/sda  # Replace /dev/sda with your disk
+# grub-mkconfig -o /boot/grub/grub.cfg
 
 # Enable NetworkManager
-pacman -S --noconfirm networkmanager
-systemctl enable NetworkManager
+# pacman -S --noconfirm networkmanager
+# systemctl enable NetworkManager
 
 # Install Xorg and i3 (if needed)
-pacman -S --noconfirm xorg-server xorg-xinit i3-gaps i3status dmenu alacritty
-
+# pacman -S --noconfirm xorg-server xorg-xinit i3-gaps i3status dmenu alacritty
+pacman -S --noconfirm xorg-server xorg-xinit i3blocks i3-wm dmenu i3lock i3status lightdm lightdm-gtk-greeter alacritty i3-gaps
 # Install vim and neovim
 pacman -S --noconfirm vim neovim
 

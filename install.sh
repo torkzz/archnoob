@@ -1,7 +1,20 @@
 #!/bin/bash
 
+
+
+# Unmount all partitions (assuming /dev/sda1 is the root partition and /dev/sda2 is the boot partition)
+umount /mnt/boot
+umount /mnt
+
+# If you have additional partitions, unmount them as well
+# umount /mnt/home (if you have a separate home partition)
+# umount /mnt/var (if you have a separate var partition)
+
+# Deactivate swap if it is active
+swapoff -a
+
 # Variables
-HOSTNAME="myhostname"
+HOSTNAME="arc"
 USERNAME="tor"
 PASSWORD="paasssword"
 TIMEZONE="Asia/Manila"

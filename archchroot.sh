@@ -37,7 +37,7 @@ echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 
 # Install Xorg and i3 (if needed)
 # pacman -S --noconfirm xorg-server xorg-xinit i3-gaps i3status dmenu alacritty
-pacman -S --noconfirm xorg-server xorg-xinit i3blocks i3-wm dmenu i3lock i3status lightdm lightdm-gtk-greeter alacritty i3-gaps
+pacman -S --noconfirm xorg-server xorg-xinit i3blocks i3-wm dmenu i3lock i3status lightdm lightdm-gtk-greeter alacritty i3-gaps btop openssh wget xdg-utils iwd smartmontools wireless_tools wpa_supplicant
 # Install vim and neovim
 pacman -S --noconfirm vim neovim
 
